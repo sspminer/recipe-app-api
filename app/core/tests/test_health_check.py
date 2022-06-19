@@ -1,8 +1,6 @@
 """
-Tests fro the health check API.
+Tests for the health check API.
 """
-
-from http import client
 from django.test import TestCase
 from django.urls import reverse
 

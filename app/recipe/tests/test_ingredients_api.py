@@ -39,7 +39,7 @@ class PublicIngredientsApiTests(TestCase):
 
     def test_auth_required(self):
         """Test auth is required for retrieving ingredients."""
-        res=self.client.get(INGREDIENTS_URL)
+        res = self.client.get(INGREDIENTS_URL)
 
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
